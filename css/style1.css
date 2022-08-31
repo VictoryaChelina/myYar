@@ -1,0 +1,346 @@
+/*цвет фона*/
+body 	{background-color: hsl(0, 0%, 100%)
+} 
+
+/* ССЫЛКИ */
+a:link {
+	color: rgb(53, 147, 255); 
+	border-bottom: 0px dashed; 
+  }
+  a:visited {
+	color: rgb(153, 116, 255);
+  }
+  a:hover {
+	color: rgb(68,68,68); 
+	border-bottom: .07em solid;
+  }
+  a:active {
+	color: rgb(68,68,68); 
+	border-bottom: 1px dashed;
+  }
+
+/*свойства заголовков*/
+h1 	{font-size: 200%; font-family: arial,sans-serif; color: rgb(68,68,68)
+}
+
+h2 	{font-size: 150%; font-family: arial,sans-serif; color: rgb(68,68,68)
+}
+
+h3 	{font-size: 100%; font-family: arial,sans-serif; color: rgb(68,68,68)
+}
+
+
+/*свойства параграфа*/
+/* Выравнивание по ширине */
+p 	{color: rgb(68,68,68); font-size:18px; text-align: justify;
+} 
+
+
+.blockquote-8 {
+    position: relative;
+    padding: 16px 24px;
+    margin: 16px 46px;    
+    font-size: 16px;
+    text-align: center;
+}
+.blockquote-8:before,
+.blockquote-8:after {
+    position: absolute;
+    color: #BFE2FF;
+    font-size: 100px;
+    font-family: Times, sans-serif;    
+    line-height: 100px;    
+}
+.blockquote-8:before {
+    content: '“';
+    left: -30px;
+    top: -10px;
+}
+.blockquote-8:after {
+    content: '”';
+    right: -30px;
+    bottom: -10px;
+}
+.blockquote-8 cite {
+    color: #337AB7;
+    font-size: 15px;
+    padding-top: 10px;
+    display: block;
+}
+/* классы */
+
+/* для последнего абзаца*/
+p.cite 	{ 		/* Абзац с классом cite */
+	color: #1891AC; /* Цвет текста */
+   margin-left: 20px; /* Отступ слева */
+	border-left: 5px solid #1891AC; /* Граница слева от текста */
+	padding-left: 3px; /* Расстояние от линии до текста */
+font-style: oblique; /*косой шрифт*/
+   }  
+
+/* 25 важнейших элементов юзабилити*/
+.gst 	{
+	color: #C06C84; /* Цвет текста */
+	font-weight: bold; /* Жирное начертание */
+font-size: 150%; font-family: Verdana, Arial, Helvetica, sans-serif;
+font-style: oblique; /*косой шрифт*/
+text-align: center
+   } 
+
+
+ /* ЭТО ЕЩЕ НЕ ДОБАВИЛИ!!!*/  
+.ddd 	{
+	color: #C06C84; /* Цвет текста */
+	font-weight: bold; /* Жирное начертание */
+font-size: 150%; font-family: Verdana, Arial, Helvetica, sans-serif;
+font-style: oblique;
+text-align: center
+   } 
+
+
+/*
+blockquote cite {
+font-style: normal;
+text-transform: uppercase;
+}*/
+
+
+
+
+
+/* ПРОСТАЯ КНОПКА */
+
+
+a.button15 {
+	display: inline-block;
+	font-family: arial,sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: rgb(68,68,68);
+	text-decoration: none;
+	user-select: none;
+	padding: .2em 1.2em;
+	outline: none;
+	border: 1px solid rgba(0,0,0,.1);
+	border-radius: 2px;
+	background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+	transition: all .218s ease 0s;
+	width: 240px
+  }
+  a.button15:hover {
+	color: rgb(24,24,24);
+	border: 1px solid rgb(198,198,198);
+	background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1);
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  }
+  a.button15:active {
+	color: rgb(51,51,51);
+	border: 1px solid rgb(204,204,204);
+	background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224));
+	box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+  }
+/* Стиль Выпадающей Кнопки */
+
+
+
+.dropbtn {
+  display: inline-block;
+  font-family: arial,sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(68,68,68);
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1);
+  transition: all .218s ease 0s;
+  width: 300px;
+	}
+	
+	
+	/* контейнер <div> - необходим для размещения выпадающего содержимого */
+	.dropdown {
+	position: relative;
+	display: inline-block;
+	
+	
+	}
+	
+	
+	
+	/* Выпадающей контент (по умолчанию скрыт) */
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	background-color: rgba(245, 245, 245, 0.425); /* цвет выпадающего поля */
+	min-width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	z-index: 10;
+	}
+	
+	
+	
+	/* Выпадающей контент (по умолчанию скрыт) */
+	.dropdown-content1 {
+	display: none;
+	position: absolute;
+	font-size: 24px;
+	font-family: arial,sans-serif;
+	color: #000000;
+	background-color: #f4f7f777;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+	z-index: 1;
+	}
+	/* Ссылки внутри выпадающего списка */
+	.dropdown-content a {
+	color: rgb(68, 68, 68);
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	}
+	.dropdown-content1 a {
+	
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	}
+	/* Изменить цвет выпадающих ссылок при наведении */
+	
+	
+	
+	.dropdown-content a:hover {background-color: rgb(68,68,68)}
+	.dropdown-content1 a:hover {background-color: #F4F7F7}
+	
+	
+	
+	/* Показать выпадающее меню при наведении */
+	.dropdown:hover .dropdown-content {
+	display: block;
+	
+	}
+	.dropdown:hover .dropdown-content1 {
+	display: block;
+	}
+	/* Изменить цвет фона выпадающеq кнопкb при отображении выпадающего списка */
+	.dropdown:hover .dropbtn {
+	background-color: #62c8cb;
+	}
+	A:hover {text-decoration: none; /* Делает ссылку подчеркнутой при наведении на нее курсора */
+	color: #F4F7F7; /* Цвет ссылки */
+	}
+
+
+
+
+
+/* Слайдер*/ 
+
+
+.wrapper {
+	height: 400px;
+	margin: 0px;
+	position: relative;
+	width: 800px;
+}
+	
+	.slider {
+		height: inherit;
+		overflow: hidden;
+		position: relative;
+		width: inherit;
+		-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+		-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+		-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+		box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	}
+	
+	.slides {
+		height: inherit;
+		opacity: 0;
+		position: absolute;
+		width: inherit;
+		z-index: 0;
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-o-transform: scale(1.5);
+		transform: scale(1.5);
+		-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+		-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+		-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+		transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	}
+	
+	.slide1 { background-image: url(https://regnum.ru/uploads/pictures/news/2020/03/11/regnum_picture_1583955747109946_normal.jpg); }
+	.slide2 { background-image: url(https://s14.stc.all.kpcdn.net/share/i/4/1711229/wr-750.jpg); }
+	.slide3 { background-image: url(https://static.ngs.ru/news/99/preview/7c2466af7a6797a59c755b7ed4f1cc4a208f75665_599_399_c.jpg); }
+	.slide4 { background-image: url(https://s10.stc.all.kpcdn.net/share/i/12/3619994/wx720.jpg); }
+	.slide5 { background-image: url(https://www.yarnews.net/files/1/1000/20285.jpg); }
+	
+	#slide1:checked ~ .slider > .slide1,
+	#slide2:checked ~ .slider > .slide2,
+	#slide3:checked ~ .slider > .slide3,
+	#slide4:checked ~ .slider > .slide4,
+	#slide5:checked ~ .slider > .slide5 {
+		opacity: 1;
+		z-index: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+	
+	.wrapper > input {
+		display: none;
+	}
+	
+	.wrapper .controls {
+		left: 50%;
+		margin-left: -98px;
+		position: absolute;
+	}
+	
+	.wrapper label {
+		cursor: pointer;
+		display: inline-block;
+		height: 8px;
+		margin: 25px 12px 0 16px;
+		position: relative;
+		width: 8px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-transition: background ease-in-out .5s;
+		-moz-transition: background ease-in-out .5s;
+		-o-transition: background ease-in-out .5s;
+		transition: background ease-in-out .5s;
+	}
+	
+	.wrapper label:hover, 
+	#slide1:checked ~ .controls label:nth-of-type(1),
+	#slide2:checked ~ .controls label:nth-of-type(2),
+	#slide3:checked ~ .controls label:nth-of-type(3),
+	#slide4:checked ~ .controls label:nth-of-type(4),
+	#slide5:checked ~ .controls label:nth-of-type(5) {
+		background: rgb(0, 0, 0);
+	}
+	
+	.wrapper label:after {
+		border: 2px solid rgb(0, 0, 0);
+		content: " ";
+		display: block;
+		height: 12px;
+		left: -4px;
+		position: absolute;
+		top: -4px;
+		width: 12px;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+	}
